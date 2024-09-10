@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1452cf;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +41,122 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+/* .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* adjust the height to your liking */
+*/ .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wishlist section */
+.wishlist-section {
+  background-color: #ffe4e1; /* Light pink background */
+  border-color: #ff6347; /* Tomato color border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-item {
+  background-color: #fff0f5; /* Light pink background for wishlist items */
+  border-color: #ff69b4; /* Hot pink border for wishlist items */
+}
+
+/* Cart section */
+.cart-section {
+  background-color: #f0f8ff; /* Light blue background */
+  border-color: #4682b4; /* Steel blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  background-color: #e6e6fa; /* Lavender background for cart items */
+  border-color: #5f9ea0; /* Cadet blue border for cart items */
+}
+
+/* General styles */
+.text-center {
+  color: #333;
+  font-weight: 600;
+}
+
+.list-group-item {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-danger {
+  background-color: #ff4500; /* OrangeRed for remove buttons */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #dc143c; /* Crimson on hover */
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control {
+  width: 600px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 120px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.ft {
+  font-size: 40px;
+}
+
+.mt22 {
+  top: -4;
 }
